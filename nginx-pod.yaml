@@ -9,3 +9,10 @@ spec:
   containers:
     - name: nginx
       image: nginx
+      volumeMounts:
+        - name: my-pv
+          mountPath: "/usr/share/nginx/html"
+  volumes:
+    - name: my-pv
+      persistentVolumeClaim:
+        claimName: pvc-nginx
