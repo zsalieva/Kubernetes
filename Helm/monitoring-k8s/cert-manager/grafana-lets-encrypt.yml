@@ -6,7 +6,7 @@ metadata:
 spec:
   acme:
     server: https://acme-v02.api.letsencrypt.org/directory
-    email: "mcalik@gmail.com"
+    email: "zuhrasalieva@gmail.com"
     privateKeySecretRef:
       name: letsencrypt-prod
     solvers:
@@ -24,6 +24,6 @@ spec:
   issuerRef:
     name: lets-encrypt-prod-issuer
     kind: Issuer
-  commonName: grafana.devopstechskills.com
+  commonName: grafana.zukhrasalieva.com
   dnsNames:
-    - grafana.devopstechskills.com
+    - grafana.zukhrasalieva.com

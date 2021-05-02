@@ -10,11 +10,11 @@ ingress:
   annotations:
     kubernetes.io/ingress.class: grafana
   hosts:
-    - grafana.devopstechskills.com
+    - grafana.zukhrasalieva.com
   tls:
     - secretName: grafana-tls
       hosts:
-        - grafana.devopstechskills.com
+        - grafana.zukhrasalieva.com
 resources:
   limits:
     cpu: 1000m
